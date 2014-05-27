@@ -93,7 +93,6 @@ int is_valid_user(const char *id_card,const char *user)
 int record_start_time(const char *id_card,const char *start_time)
 {
 	MYSQL *mysql;
-	MYSQL_RES *result;
 	char query_str[150];
 	int affect_rows;
 	mysql = open(host,user,password,database);
@@ -125,6 +124,8 @@ char *query_owner(const char *id_card)
 	MYSQL_RES *result;
 	MYSQL_ROW row;
 	char query_str[100];
+	char *owner;
+	int find = 0;
 	mysql = open(host,user,password,database);
 	if(mysql == NULL)
 	{
@@ -142,7 +143,17 @@ char *query_owner(const char *id_card)
 
 	if((row = mysql_fetch_row(result)) != NULL)
 	{
-		return row[0];
+		owner = (char *)malloc(sizeof(char)*strlen((char*)row)+1);
+		strcpy(owner,row[0]);
+		find = 1;
+	}
+	
+	mysql_free_result(result);
+	mysql_close(mysql);
+	
+	if(find == 1)
+	{
+		return owner;
 	}
 
 	return NULL;
@@ -151,13 +162,15 @@ char *query_owner(const char *id_card)
  * 功能：查询入库时间
  * 参数：id_card - 车主所持卡ID
  * 		 start_time - 存放查询结果
- * 返回值：成功查询返回时间，出错返回0，数据内部出错返回-1
+ * 返回值：成功查询返回1，出错返回0，数据内部出错返回-1
  */
 int query_start_time(const char *id_card, char *start_time)
 {
 	MYSQL *mysql = NULL;
 	MYSQL_RES *result;
 	MYSQL_ROW row;
+	int affect_rows;
+	int find = 0;
 	char query_str[200];
 	
 	mysql = open(host,user,password,database);
@@ -176,12 +189,23 @@ int query_start_time(const char *id_card, char *start_time)
 	result = mysql_use_result(mysql);
 	if((row = mysql_fetch_row(result)) != NULL)
 	{
-		strcpy(start_time,row[0]);
-		return 1;
+		affect_rows = mysql_num_rows(result);
+		if(affect_rows > 0)
+		{
+			strcpy(start_time,row[0]);
+			find = 1;
+		}
 	}
 
+	mysql_free_result(result);
+	mysql_close(mysql);
+	
+	if(find == 1)
+	{
+		return 1;
+	}
+	
 	return 0;
-
 }
 /**
  * 功能：查询id_card和start_time所对应的stop_time

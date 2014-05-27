@@ -49,7 +49,7 @@ int parking_check(const char *id_card,char *emsg)
  * 参数：enter_node - 入库位置
  * 返回值：无
  */
-void lift_bar(int enter_node)
+void send_msg_lift_bar(int enter_node)
 {
 	
 }
@@ -59,7 +59,7 @@ void lift_bar(int enter_node)
  * 		 stop - 建议停车区域
  * 返回值：无
  */
-void set_suggest_parking_area(int enter_node,int stop)
+void send_msg_suggest_parking_area(int enter_node,int stop)
 {
 	
 }
@@ -70,7 +70,7 @@ void set_suggest_parking_area(int enter_node,int stop)
  * 		 fee - 停车费用
  * 返回值：无
  */
-void show_parking_fee(int enter_node,int parking_time,int fee)
+void send_msg_parking_fee(int enter_node,int parking_time,int fee)
 {
 	
 }

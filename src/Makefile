@@ -17,3 +17,4 @@ datetime.o: datetime.c datetime.h
 
 clean:
 	rm -f *.o
+	rm -f *.h.gch
