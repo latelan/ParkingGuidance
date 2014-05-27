@@ -76,7 +76,7 @@ int main()
 		}
 		if(n%3 == 0 && n != 0)
 			printf("\n");
-		printf("%2d ",sum);
+		printf("%02d ",sum);
 	}
 	printf("\n");
 }

@@ -369,6 +369,11 @@ int find_parking_place(int start)
 			if(area_node[i] < LIMITS_CASE_ONE_PARKING
 					&& min > area_node[i])
 			{
+				if(area_node[i] < MIN_CASE_ONE_PARKING)
+				{// 如果该区域少于5 MIN_CASE_ONE_PARKING 辆车，直接选择
+					stop = i;
+					return stop;
+				}
 				stop = i;
 				min = area_node[i];
 			}
@@ -409,6 +414,8 @@ int find_parking_place(int start)
 				}
 			}
 		}
+
+		return stop;
 	}
 	else
 	{// 情况3,停车场较满
@@ -423,8 +430,11 @@ int find_parking_place(int start)
 		}
 
 		stop = min;
+
+		return stop;
 	}
-	return stop;
+
+	return 0;
 }
 /**
  * 功能：由当前车库停车信息和车辆入库位置计算出该次停车的诱导方案
@@ -459,7 +469,7 @@ void get_shortest_path(int start, int path[], int len)
     // 确定终节点(最后停车位置)
     stop = find_parking_place(start);
 
-	printf("最终停车区域: %s\n",area_node_id(stop));
+	printf("建议停车区域: %s\n",area_node_id(stop));
 	printf("该区停车数量: %d\n",area_node[stop]);
 
     //test
@@ -472,20 +482,20 @@ void get_shortest_path(int start, int path[], int len)
 	*/
 
 	// test
-	printf("诱导路线: ");
+	//printf("诱导路线: ");
     // 计算路径，放入path中
-    len = find_path(node_to_area(stop),path);
-    if (0 == len)
-    {// 没有找到
+    //len = find_path(node_to_area(stop),path);
+    //if (0 == len)
+    //{// 没有找到
         // 启用模糊算法，找另一停车位
         // TODO
-		printf("Find it.\n");
-    }
-    else
-    {
+	//	printf("Find it.\n");
+    //}
+    //else
+    //{
         // 返回
-        return;
-    }
+    //    return;
+    //}
 }
 
 /**

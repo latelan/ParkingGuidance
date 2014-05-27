@@ -15,6 +15,12 @@ sql.o: sql.c sql.h
 datetime.o: datetime.c datetime.h
 	cc -c datetime.c datetime.h
 
+demo:
+	$(MAKE) -f Makefile_demo
+show:
+	sed -n '1,9p' ./data/data
+	./demo_algorithm 
+	cd ./data/ && sh showmap.sh && cd ..
 clean:
 	rm -f *.o
 	rm -f *.h.gch

@@ -1,5 +1,6 @@
 #define N 20 // 最大节点数
 #define LIMITS_CASE_ONE_PARKING 15 // 情况1下停车候选区最大已停车数
+#define MIN_CASE_ONE_PARKING 5 // 区域最少停车5辆
 
 int data[N][N]; // 邻接矩阵
 int dist[N];    // 源节点到各节点的最短距离
