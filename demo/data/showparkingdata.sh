@@ -7,7 +7,7 @@
 #echo 100 | ./datamaker > data
 
 
-sh ./showmap.sh
+#sh ./showmap.sh
 
 echo "停车位图:"
 sed -n '1,9p' data

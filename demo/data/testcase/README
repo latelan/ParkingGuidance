@@ -1,0 +1,7 @@
+数据文件说明
+============
+
+original_data_1_1.txt - 停车数据文件 
+pariking_area_1_1.txt - 显示区域数据文件
+area_sum_1_1.txt	  - 区域统计数据文件 
+parkingmap_1_1.txt    - 停车场边权数据文件
