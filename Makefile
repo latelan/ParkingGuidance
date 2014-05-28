@@ -1,10 +1,28 @@
-parkingguidence: data.o dijkstra.o
-	cc -o parkingquidence data.o dijkstra.o
-data.o: data.c data.h
-	cc -c  data.c
-dijstra.o: dijkstra.h dijkstra.c
-	cc -c  dijkstra.c
+#!Makefile
 
-.PHONY : clean
+# ------------------------------------------------------------------------
+#
+# 项目的 Makefile 示例，对于此结构代码，该 Makefile 均通用。
+#
+# ------------------------------------------------------------------------
+C_SOURCES = $(shell find . -name "*.c")
+C_OBJECTS = $(patsubst %.c, %.o, $(C_SOURCES))
+
+CC = gcc
+C_FLAGS = -D_REENTRANT -DSERVER_DEBUG -c -Wall -Iinclude -g
+LINK_FLAGS = -L/usr/lib/mysql $(mysql_config --cflags) $(mysql_config --libs)
+PROGRAM = guidence
+
+all: $(C_OBJECTS) 
+	@echo 链接 ...
+	$(CC) $(C_OBJECTS) $(LINK_FLAGS) -o $(PROGRAM)
+
+.c.o:
+	@echo 编译代码文件 $< ...
+	$(CC) $(C_FLAGS) $< -o $@
+
+.PHONY:clean
 clean:
-	-rm -f *.o
+	@echo 清理临时文件
+	$(RM) $(C_OBJECTS) $(PROGRAM)
+
