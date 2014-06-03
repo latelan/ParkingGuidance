@@ -4,14 +4,16 @@
 
 # 原始地图路径
 PATH_MAP=./map/map2
+PATH_NODE_ADJ=./data/node_adj.txt
 
 a=(0)
 i=1
+
 while read line
 do
 	a[$i]=`echo $line | cut -d ' ' -f 2`
 	((i++))
-done < node_adj.txt
+done < $PATH_NODE_ADJ
 
 if [ "$1" == '-edge' ]; then
 	echo "边权信息:"

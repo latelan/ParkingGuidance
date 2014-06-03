@@ -454,7 +454,7 @@ void get_shortest_path(int start, int path[], int len)
 
 	// test 
 	//print_char_array(parking_map,6,60);
-	print_node_adj(data,MAX_KEY_NODE-2,MAX_KEY_NODE-2);
+	//print_node_adj(data,MAX_KEY_NODE-2,MAX_KEY_NODE-2);
 	print_area_node(area_node,9);
 
 

@@ -9,17 +9,13 @@ datamaker
 关于测试
 ========
 
-1.生成数据，使用datamaker产生停车数据,如：产生已停了100辆车的
-  停车场数据，数据将保存在parking_lots.txt中
-  	
+生成数据，使用datamaker产生停车数据,如：产生已停了100辆车的
+停车场数据.  	
 	sh makedata.sh 100 
 
-2.计算，接着使用parkingguidence进行计算，产生的邻接矩阵
-  数据保存在./data/node_adj.txt中
-  	
-	./parkingguidence
+输出文件说明
+============
 
-3.测试，使用./data/test.sh生成停车场布局图及边全信息，进行
-  手工计算，验证算法正确性。
-	
-	sh test.sh
+parking_lots.txt - 停车场原始停车数据 
+parking_map.txt  - 停车数据高亮显示
+parking_area.txt - 区域停车统计数据

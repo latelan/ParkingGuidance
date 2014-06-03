@@ -178,7 +178,7 @@ void update_area_info_handle(int keep_minutes,int interval_seconds)
 
 void init()
 {
-	set_parking_map(path_parking_data,1);
+	//set_parking_map(path_parking_data,1);
 }
 int main()
 {
