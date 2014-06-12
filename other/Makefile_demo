@@ -1,0 +1,10 @@
+demo_algorithm: dijkstra.o data.o 
+	cc -g -o demo_algorithm demo_algorithm.c dijkstra.o data.o
+dijkstra.o: dijkstra.c dijkstra.h
+	cc -g -c dijkstra.c 
+data.o:
+	cc -g -c data.c
+
+.PHONY: clean
+clean:
+	rm -f demo_algorithm 
