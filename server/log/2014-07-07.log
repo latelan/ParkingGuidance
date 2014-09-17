@@ -1,0 +1,130 @@
+2014-07-07 12:28:12 Server start ...
+2014-07-07 13:01:19 Server start ...
+2014-07-07 13:01:32 Server start ...
+2014-07-07 13:03:05 2014-07-07 13:03:05 Msg: Detected parking at pos 15.
+2014-07-07 13:03:09 2014-07-07 13:03:09 Msg:Detected leaving at pos 15.
+2014-07-07 13:04:54 New coming at A1,id is root,owner is 2
+2014-07-07 13:07:42 Server start ...
+2014-07-07 13:07:51 Server start ...
+2014-07-07 13:07:52 New coming at A1,id is root,owner is 2
+2014-07-07 13:08:11 Server start ...
+2014-07-07 13:08:15 New coming at A1,id is root,owner is 2
+2014-07-07 13:08:45 Server start ...
+2014-07-07 13:08:50 New coming at A1,id is root,owner is 2
+2014-07-07 13:09:18 Server start ...
+2014-07-07 13:09:22 New coming at A1,id is root,owner is 2
+2014-07-07 13:09:22 Msg: cann't park. unvalid user.
+2014-07-07 13:09:30 2014-07-07 13:09:30 Msg: Detected parking at pos 15.
+2014-07-07 13:09:31 2014-07-07 13:09:31 Msg:Detected leaving at pos 15.
+2014-07-07 14:56:02 Server start ...
+2014-07-07 14:56:37 New coming at A1,id is root,owner is 8
+2014-07-07 14:56:37 Msg: cann't park. unvalid user.
+2014-07-07 14:57:08 New coming at A1,id is root,owner is 21
+2014-07-07 14:57:08 Msg: cann't park. unvalid user.
+2014-07-07 14:57:21 New coming at A1,id is root,owner is 1
+2014-07-07 14:57:21 Msg: cann't park. unvalid user.
+2014-07-07 14:57:32 New coming at A1,id is root,owner is 12
+2014-07-07 14:57:32 Msg: cann't park. unvalid user.
+2014-07-07 14:58:07 Server start ...
+2014-07-07 14:58:17 New coming at A1,id is 12,owner is root
+2014-07-07 14:58:38 New coming at A1,id is 12,owner is root
+2014-07-07 14:58:38 Msg: cann't park. a previous parking records has found.
+2014-07-07 15:08:54 Server start ...
+2014-07-07 15:08:56 New coming at A1,id is root,owner is 2
+2014-07-07 15:08:56 Msg: cann't park. unvalid user.
+2014-07-07 15:09:02 New coming at A1,id is root,owner is 2
+2014-07-07 15:09:02 Msg: cann't park. unvalid user.
+2014-07-07 15:09:12 New coming at A1,id is 2,owner is root
+2014-07-07 15:09:12 Msg: cann't park. a previous parking records has found.
+2014-07-07 15:09:50 Server start ...
+2014-07-07 15:09:54 New coming at A1,id is 2,owner is root
+2014-07-07 15:09:54 Msg: cann't park. parking lots is full.
+2014-07-07 15:20:40 Server start ...
+2014-07-07 15:20:45 New coming at A1,id is 2,owner is root
+2014-07-07 15:20:45 Msg: cann't park. a previous parking records has found.
+2014-07-07 15:20:54 New coming at A1,id is 2,owner is root
+2014-07-07 15:20:54 Msg: cann't park. a previous parking records has found.
+2014-07-07 15:23:29 Server start ...
+2014-07-07 15:23:41 New coming at A1,id is 13,owner is root
+2014-07-07 15:35:06 New coming at A1,id is 14,owner is root
+2014-07-07 15:47:37 New coming at A1,id is 22,owner is root
+2014-07-07 15:47:37 Msg: cann't park. unvalid user.
+2014-07-07 15:47:50 New coming at A1,id is 13,owner is root
+2014-07-07 15:47:50 Msg: cann't park. a previous parking records has found.
+2014-07-07 15:49:19 New coming at A1,id is 22,owner is root
+2014-07-07 15:49:19 Msg: cann't park. unvalid user.
+2014-07-07 15:49:30 New coming at A1,id is 13,owner is root
+2014-07-07 15:49:30 Msg: cann't park. a previous parking records has found.
+2014-07-07 15:49:41 New coming at A1,id is 15,owner is root
+2014-07-07 15:54:03 New coming at A1,id is 22,owner is root
+2014-07-07 15:54:03 Msg: cann't park. unvalid user.
+2014-07-07 15:54:11 New coming at A1,id is 13,owner is root
+2014-07-07 15:54:11 Msg: cann't park. a previous parking records has found.
+2014-07-07 15:54:22 New coming at A1,id is 16,owner is root
+2014-07-07 15:59:40 New coming at A1,id is 22,owner is root
+2014-07-07 15:59:40 Msg: cann't park. unvalid user.
+2014-07-07 15:59:52 New coming at A1,id is 13,owner is root
+2014-07-07 15:59:52 Msg: cann't park. a previous parking records has found.
+2014-07-07 16:00:00 New coming at A1,id is 17,owner is root
+2014-07-07 16:05:01 2014-07-07 16:05:01 Msg: Detected parking at pos 8.
+2014-07-07 16:05:09 2014-07-07 16:05:09 Msg:Detected leaving at pos 8.
+2014-07-07 16:05:12 2014-07-07 16:05:12 Msg: Detected parking at pos 8.
+2014-07-07 16:05:13 2014-07-07 16:05:13 Msg:Detected leaving at pos 8.
+2014-07-07 16:05:14 2014-07-07 16:05:14 Msg: Detected parking at pos 8.
+2014-07-07 16:05:19 2014-07-07 16:05:19 Msg:Detected leaving at pos 8.
+2014-07-07 16:05:21 2014-07-07 16:05:21 Msg: Detected parking at pos 8.
+2014-07-07 16:05:24 2014-07-07 16:05:24 Msg:Detected leaving at pos 8.
+2014-07-07 16:05:36 2014-07-07 16:05:36 Msg: Detected parking at pos 8.
+2014-07-07 16:05:37 2014-07-07 16:05:37 Msg:Detected leaving at pos 8.
+2014-07-07 16:06:33 2014-07-07 16:06:33 Msg: Detected parking at pos 8.
+2014-07-07 16:06:37 2014-07-07 16:06:37 Msg:Detected leaving at pos 8.
+2014-07-07 16:08:05 2014-07-07 16:08:05 Msg: Detected parking at pos 8.
+2014-07-07 16:08:16 2014-07-07 16:08:16 Msg:Detected leaving at pos 8.
+2014-07-07 16:08:26 2014-07-07 16:08:26 Msg: Detected parking at pos 8.
+2014-07-07 16:08:27 2014-07-07 16:08:27 Msg:Detected leaving at pos 8.
+2014-07-07 16:09:36 2014-07-07 16:09:36 Msg: Detected parking at pos 8.
+2014-07-07 16:09:37 2014-07-07 16:09:37 Msg:Detected leaving at pos 8.
+2014-07-07 16:09:50 2014-07-07 16:09:50 Msg: Detected parking at pos 8.
+2014-07-07 16:09:51 2014-07-07 16:09:51 Msg:Detected leaving at pos 8.
+2014-07-07 16:09:54 2014-07-07 16:09:54 Msg: Detected parking at pos 8.
+2014-07-07 16:09:55 2014-07-07 16:09:55 Msg:Detected leaving at pos 8.
+2014-07-07 16:10:04 2014-07-07 16:10:04 Msg: Detected parking at pos 8.
+2014-07-07 16:10:20 2014-07-07 16:10:20 Msg:Detected leaving at pos 8.
+2014-07-07 16:10:26 2014-07-07 16:10:26 Msg: Detected parking at pos 8.
+2014-07-07 16:10:28 2014-07-07 16:10:28 Msg:Detected leaving at pos 8.
+2014-07-07 16:14:04 2014-07-07 16:14:04 Msg: Detected parking at pos 8.
+2014-07-07 16:14:11 2014-07-07 16:14:11 Msg:Detected leaving at pos 8.
+2014-07-07 16:14:45 2014-07-07 16:14:45 Msg: Detected parking at pos 8.
+2014-07-07 16:14:58 2014-07-07 16:14:58 Msg:Detected leaving at pos 8.
+2014-07-07 16:15:03 2014-07-07 16:15:03 Msg: Detected parking at pos 8.
+2014-07-07 16:15:04 2014-07-07 16:15:04 Msg:Detected leaving at pos 8.
+2014-07-07 16:15:55 2014-07-07 16:15:55 Msg: Detected parking at pos 8.
+2014-07-07 16:15:56 2014-07-07 16:15:56 Msg:Detected leaving at pos 8.
+2014-07-07 16:17:22 2014-07-07 16:17:22 Msg: Detected parking at pos 8.
+2014-07-07 16:17:23 2014-07-07 16:17:23 Msg:Detected leaving at pos 8.
+2014-07-07 16:17:25 2014-07-07 16:17:25 Msg: Detected parking at pos 8.
+2014-07-07 16:17:26 2014-07-07 16:17:26 Msg:Detected leaving at pos 8.
+2014-07-07 16:17:56 2014-07-07 16:17:56 Msg: Detected parking at pos 8.
+2014-07-07 16:18:17 2014-07-07 16:18:17 Msg:Detected leaving at pos 8.
+2014-07-07 16:19:16 2014-07-07 16:19:16 Msg: Detected parking at pos 8.
+2014-07-07 16:19:17 2014-07-07 16:19:17 Msg:Detected leaving at pos 8.
+2014-07-07 16:19:55 2014-07-07 16:19:55 Msg: Detected parking at pos 8.
+2014-07-07 16:19:56 2014-07-07 16:19:56 Msg:Detected leaving at pos 8.
+2014-07-07 16:22:55 2014-07-07 16:22:55 Msg: Detected parking at pos 8.
+2014-07-07 16:22:56 2014-07-07 16:22:56 Msg:Detected leaving at pos 8.
+2014-07-07 16:22:57 2014-07-07 16:22:57 Msg: Detected parking at pos 8.
+2014-07-07 16:22:58 2014-07-07 16:22:58 Msg:Detected leaving at pos 8.
+2014-07-07 16:23:17 2014-07-07 16:23:17 Msg: Detected parking at pos 8.
+2014-07-07 16:23:18 2014-07-07 16:23:18 Msg:Detected leaving at pos 8.
+2014-07-07 16:24:14 2014-07-07 16:24:14 Msg: Detected parking at pos 8.
+2014-07-07 16:24:15 2014-07-07 16:24:15 Msg:Detected leaving at pos 8.
+2014-07-07 16:25:53 2014-07-07 16:25:53 Msg: Detected parking at pos 8.
+2014-07-07 16:26:08 2014-07-07 16:26:08 Msg:Detected leaving at pos 8.
+2014-07-07 16:30:37 Leaving at E1,id is 14,owner is root
+2014-07-07 16:30:38 Msg: Car leaving.
+2014-07-07 16:31:30 Leaving at E1,id is 15,owner is root
+2014-07-07 16:31:30 Msg: Car leaving.
+2014-07-07 16:33:05 Leaving at E1,id is 16,owner is root
+2014-07-07 16:33:05 Msg: Car leaving.
+2014-07-07 16:35:32 Leaving at E1,id is 17,owner is root
+2014-07-07 16:35:32 Msg: Car leaving.

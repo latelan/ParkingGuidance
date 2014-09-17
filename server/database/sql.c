@@ -5,10 +5,10 @@
 #include "datetime.h"
 
 
-#define HOST ""
-#define USER ""
-#define PASSWORD ""
-#define DATABASE ""
+#define HOST "localhost"
+#define USER "admin"
+#define PASSWORD "admin@parking.com"
+#define DATABASE "parking"
 
 const char *host = HOST;
 const char *user = USER;

@@ -1,0 +1,53 @@
+2014-09-17 20:51:40 Server start ...
+2014-09-17 20:52:21 Server start ...
+2014-09-17 20:54:33 2014-09-17 20:54:33 Msg: Detected parking at pos 8.
+2014-09-17 20:54:56 2014-09-17 20:54:56 Msg:Detected leaving at pos 8.
+2014-09-17 20:55:13 2014-09-17 20:55:13 Msg: Detected parking at pos 8.
+2014-09-17 20:55:20 2014-09-17 20:55:20 Msg:Detected leaving at pos 8.
+2014-09-17 20:55:59 2014-09-17 20:55:59 Msg: Detected parking at pos 8.
+2014-09-17 20:56:04 2014-09-17 20:56:04 Msg:Detected leaving at pos 8.
+2014-09-17 20:56:28 2014-09-17 20:56:28 Msg: Detected parking at pos 8.
+2014-09-17 20:56:29 2014-09-17 20:56:29 Msg:Detected leaving at pos 8.
+2014-09-17 20:56:31 2014-09-17 20:56:31 Msg: Detected parking at pos 8.
+2014-09-17 20:56:36 2014-09-17 20:56:36 Msg:Detected leaving at pos 8.
+2014-09-17 20:57:06 2014-09-17 20:57:06 Msg: Detected parking at pos 8.
+2014-09-17 20:57:07 2014-09-17 20:57:07 Msg:Detected leaving at pos 8.
+2014-09-17 20:57:12 2014-09-17 20:57:12 Msg: Detected parking at pos 8.
+2014-09-17 20:57:14 2014-09-17 20:57:14 Msg:Detected leaving at pos 8.
+2014-09-17 20:58:26 2014-09-17 20:58:26 Msg: Detected parking at pos 8.
+2014-09-17 20:58:27 2014-09-17 20:58:27 Msg:Detected leaving at pos 8.
+2014-09-17 20:58:42 2014-09-17 20:58:42 Msg: Detected parking at pos 8.
+2014-09-17 20:58:50 2014-09-17 20:58:50 Msg:Detected leaving at pos 8.
+2014-09-17 20:58:52 2014-09-17 20:58:52 Msg: Detected parking at pos 8.
+2014-09-17 20:58:57 2014-09-17 20:58:57 Msg:Detected leaving at pos 8.
+2014-09-17 20:59:28 2014-09-17 20:59:28 Msg: Detected parking at pos 8.
+2014-09-17 20:59:29 2014-09-17 20:59:29 Msg:Detected leaving at pos 8.
+2014-09-17 20:59:32 2014-09-17 20:59:32 Msg: Detected parking at pos 8.
+2014-09-17 20:59:39 2014-09-17 20:59:39 Msg:Detected leaving at pos 8.
+2014-09-17 21:00:38 2014-09-17 21:00:38 Msg: Detected parking at pos 8.
+2014-09-17 21:00:44 2014-09-17 21:00:44 Msg:Detected leaving at pos 8.
+2014-09-17 21:01:41 New coming at A1,id is 1,owner is root
+2014-09-17 21:01:41 Msg: cann't park. a previous parking records has found.
+2014-09-17 21:02:00 New coming at A1,id is 13,owner is root
+2014-09-17 21:02:00 Msg: cann't park. a previous parking records has found.
+2014-09-17 21:05:27 2014-09-17 21:05:27 Msg: Detected parking at pos 8.
+2014-09-17 21:05:28 2014-09-17 21:05:28 Msg:Detected leaving at pos 8.
+2014-09-17 21:05:29 New coming at A1,id is 1,owner is root
+2014-09-17 21:05:29 Msg: cann't park. a previous parking records has found.
+2014-09-17 21:05:47 New coming at A1,id is 2,owner is root
+2014-09-17 21:05:47 Msg: cann't park. a previous parking records has found.
+2014-09-17 21:06:44 Leaving at E1,id is 1,owner is root
+2014-09-17 21:06:44 Msg: Car leaving.
+2014-09-17 21:06:58 Leaving at E1,id is 2,owner is root
+2014-09-17 21:06:58 Msg: Car leaving.
+2014-09-17 21:08:22 New coming at A1,id is 2,owner is root
+2014-09-17 21:08:41 New coming at A1,id is 22,owner is root
+2014-09-17 21:08:41 Msg: cann't park. unvalid user.
+2014-09-17 21:08:55 2014-09-17 21:08:55 Msg: Detected parking at pos 8.
+2014-09-17 21:08:56 2014-09-17 21:08:56 Msg:Detected leaving at pos 8.
+2014-09-17 21:09:27 2014-09-17 21:09:27 Msg: Detected parking at pos 8.
+2014-09-17 21:09:28 2014-09-17 21:09:28 Msg:Detected leaving at pos 8.
+2014-09-17 21:11:18 2014-09-17 21:11:18 Msg: Detected parking at pos 8.
+2014-09-17 21:11:19 2014-09-17 21:11:19 Msg:Detected leaving at pos 8.
+2014-09-17 21:13:02 2014-09-17 21:13:02 Msg: Detected parking at pos 8.
+2014-09-17 21:13:03 2014-09-17 21:13:03 Msg:Detected leaving at pos 8.
