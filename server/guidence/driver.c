@@ -255,7 +255,7 @@ int main()
 						}
 						else if(msg_recv.action == 0)
 						{
-							sprintf(log_records,"%s Msg:Detected leaving at pos %d.",get_curr_time(),msg_recv.pos);
+							sprintf(log_records,"%s Msg: Detected leaving at pos %d.",get_curr_time(),msg_recv.pos);
 							printf("%s\n",log_records);
 							logmaker(log_records);
 						}

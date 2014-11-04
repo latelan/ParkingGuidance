@@ -109,9 +109,9 @@ bool send_msg(int msg_type,int pos,int action)
 
 int main(int argc, char const *argv[])
 {
-	if(argc != 3)
+	if(argc != 4)
 	{
-		printf("need argument.\n");
+		printf("Usage: %s enterpos cardid ownername.\n",argv[0]);
 		return 0;
 	}
 	udp();
@@ -122,7 +122,7 @@ int main(int argc, char const *argv[])
 		msgCard_send.msg_type = CARD;
 		msgCard_send.pos = atoi(argv[1]);
 		strcpy(msgCard_send.id,argv[2]);
-		strcpy(msgCard_send.usr,"root");
+		strcpy(msgCard_send.usr,argv[3]);
 		int ret = sendto(sock_fd,&msgCard_send,sizeof(msgCard_send),0,(struct sockaddr *)&broadcast,len); 
 		if (ret <= 0)
 		{

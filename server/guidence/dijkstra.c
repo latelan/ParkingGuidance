@@ -127,8 +127,8 @@ char *node_id(int id)
 {
 	switch(id)
 	{
-		case 0: return "A1";
-		case 1: return "A2";   
+		case 0: return "I1";
+		case 1: return "I2";   
 		case 2: return "B1";   
 		case 3: return "B2";   
 		case 4: return "B3";   
@@ -141,8 +141,8 @@ char *node_id(int id)
 		case 11: return "D2";   
 		case 12: return "D3";   
 		case 13: return "D4";
-		case 14: return "E1";
-		case 15: return "E2";
+		case 14: return "O1";
+		case 15: return "O2";
 		default:return NULL;
 	}
 }
