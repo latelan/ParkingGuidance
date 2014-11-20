@@ -111,7 +111,7 @@ int main(int argc, char const *argv[])
 {
 	if(argc != 4)
 	{
-		printf("Usage: %s enterpos cardid ownername.\n",argv[0]);
+		printf("Usage: %s enterpos[0,1] cardid ownername.\n",argv[0]);
 		return 0;
 	}
 	udp();

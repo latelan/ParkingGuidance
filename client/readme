@@ -1,0 +1,6 @@
+Client  代码
+------------
+
+cap_send.c      出入口刷卡模块代码
+led_enter.c     入口LED显示屏模块
+motor.c         挡杆模块代码
