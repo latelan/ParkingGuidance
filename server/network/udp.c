@@ -144,6 +144,7 @@ int recv_msg()
 	}
 
 	memcpy(&msg_recv,buffer,sizeof(msg_recv)); 
+	
 
 	if (msg_recv.msg_type == CAP)
 	{

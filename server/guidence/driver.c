@@ -271,7 +271,7 @@ int main()
 				}		
 			case CARD:	/*收到入库出库信息*/
 				{
-					if ( 0 == msgCard_recv.pos || 1 == msgCard_recv.pos ) /*入库信息*/
+					if ( I1 == msgCard_recv.pos || I2 == msgCard_recv.pos ) /*入库信息*/
 					{
 						sprintf(log_records,"New coming at %s,id is %s,owner is %s",node_id(msgCard_recv.pos),msgCard_recv.id_or_time,msgCard_recv.owner_or_fee);
 						printf("%s %s\n",get_curr_time(),log_records);
@@ -279,7 +279,7 @@ int main()
 
 						parking_handle(msgCard_recv.pos, msgCard_recv.id_or_time, msgCard_recv.owner_or_fee);
 					}
-					else if ( 14 == msgCard_recv.pos || 15 == msgCard_recv.pos ) /* 出库信息 */
+					else if ( O1 == msgCard_recv.pos || O2 == msgCard_recv.pos ) /* 出库信息 */
 					{
 						sprintf(log_records,"Leaving at %s,id is %s,owner is %s",node_id(msgCard_recv.pos),msgCard_recv.id_or_time,msgCard_recv.owner_or_fee);
 						printf("%s %s\n",get_curr_time(),log_records);

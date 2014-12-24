@@ -25,6 +25,12 @@
 #define ND3 12
 #define ND4 13
 
+// 入口、出口
+#define I1 0
+#define I2 1
+#define O1 14
+#define O2 15
+
 // 停车位映射矩阵的大小
 #define WIDTH_OF_PARKING_MAP 60	// 每个区域20车位共3区域
 #define LENGTH_OF_PARKING_MAP 6 // 共6个横排区域
