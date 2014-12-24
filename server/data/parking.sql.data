@@ -1,0 +1,63 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.7
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 24, 2014 at 01:46 PM
+-- Server version: 5.5.40-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `parking`
+--
+
+--
+-- Dumping data for table `parking_record`
+--
+
+INSERT INTO `parking_record` (`id`, `id_num`, `in_time`, `out_time`) VALUES
+(1, 'b2350', '2014-12-24 12:51:00', '2014-12-24 13:32:10'),
+(2, 'e33a0', '2014-12-24 12:51:10', '2014-12-24 12:54:34'),
+(3, '733b0', '2014-12-24 12:51:42', '2014-12-24 12:54:27'),
+(4, 'feca0', '2014-12-24 12:52:44', '2014-12-24 12:54:43'),
+(5, '1ec30', '2014-12-24 13:02:01', '2014-12-24 13:31:12'),
+(6, 'a3aa0', '2014-12-24 13:14:01', '2014-12-24 13:32:21'),
+(7, 'edaf0', '2014-12-24 13:14:18', '2014-12-24 13:31:00'),
+(8, 'd23c0', '2014-12-24 13:14:42', '2014-12-24 13:32:27'),
+(9, 'feca0', '2014-12-24 13:16:09', '2014-12-24 13:32:17'),
+(10, 'e33a0', '2014-12-24 13:17:58', '2014-12-24 13:32:06'),
+(11, '4de70', '2014-12-24 13:21:45', '2014-12-24 13:32:24'),
+(12, 'fecf0', '2014-12-24 13:22:38', '2014-12-24 13:32:12'),
+(13, '733b0', '2014-12-24 13:29:27', '2014-12-24 13:31:57'),
+(14, '4de70', '2014-12-24 13:33:33', '2014-12-24 13:40:58'),
+(15, 'a3aa0', '2014-12-24 13:33:46', '2014-12-24 13:41:20'),
+(16, 'feca0', '2014-12-24 13:38:28', '2014-12-24 13:41:12');
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_num`, `owner`) VALUES
+('1ec30', 'RFID'),
+('4de70', 'RFID'),
+('733b0', 'RFID'),
+('a3aa0', 'RFID'),
+('b2350', 'RFID'),
+('d23c0', 'RFID'),
+('e33a0', 'RFID'),
+('edaf0', 'RFID'),
+('feca0', 'RFID'),
+('fecf0', 'RFID');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
