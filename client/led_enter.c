@@ -24,22 +24,18 @@
 
 #define led 13
 
+
 #define Num_Word 1				//液晶能显示的汉字个数
 
 #define UDP_BUFFER_SIZE 1024
 #define PORT 5000
 #define bool int
 #define ture 1
-#define false 0
-//接收的包类型
-#define CAP 0
-#define CARD 1
 //发送的包类型
 #define BAR 2
 #define LED 3
-#define CLIENT 4
 
-#define POS 0
+int pos;
 
 static int sock_fd;
 struct sockaddr_in address;
@@ -114,12 +110,15 @@ int recv_msg()
 	}
 
 	memcpy(&msg_recv,buffer,sizeof(msg_recv)); 
-
-	if (msg_recv.msg_type == LED)
+	if(msg_recv.pos == pos)
 	{
-		if (msg_recv.pos == POS)
-		{	
-			return msg_recv.action;
+		if (msg_recv.msg_type == LED)
+		{
+			return LED;
+		}
+		if(msg_recv.msg_type == BAR)
+		{
+			return BAR;
 		}
 	}
 	return -1; 
@@ -397,15 +396,17 @@ const unsigned char Word13[Num_Of_Word][32] =
 };
 
 
-
-
-
-
 unsigned char Word[Num_Of_Word][32] = {0};
 int action = -1;
 int count = 0;
+
 void setup()
 {
+	if(argc != 2){
+		printf("usage:led_enter pos<enter:0,1>/n");
+		exit(0);
+	}
+	pos = atoi(argv[1]);
 	pinMode(LEDARRAY_D, OUTPUT); 
 	pinMode(LEDARRAY_C, OUTPUT);
 	pinMode(LEDARRAY_B, OUTPUT);
@@ -415,6 +416,7 @@ void setup()
 	pinMode(LEDARRAY_CLK, OUTPUT);
 	pinMode(LEDARRAY_LAT, OUTPUT);
 	udp();
+
 	Clear_Display();
 }
 
@@ -426,79 +428,56 @@ void loop()
 	//******************************************************       
 	fd_set read_set;
 	struct timeval timeout;
-
+	pid_t pid; 
 	timeout.tv_sec = 0;
 	timeout.tv_usec = 50;
 	FD_ZERO(&read_set);
 	FD_SET(sock_fd,&read_set);
 
 	select(sock_fd+1,&read_set,NULL,NULL,&timeout);
-
 	if(FD_ISSET(sock_fd,&read_set))
 	{
 		ret = recv_msg();
-		if(ret != -1)
-			action = ret;
+		if(ret == BAR)
+		{
+			pid = fork();
+			if(pid == 0)
+			{
+				execl("/home/ubuntu/c_enviroment/output/test/motor","motor","10000",NULL);
+				exit(0);
+			}
+		}
+		if(ret == LED)
+		{
+			action = msg_recv.action;
+			Clear_Display();
+			Display_Buffer[2];
+			Display_Swap_Buffer[Num_Word][32]={0};					//显示缓冲区
+			Shift_Bit = 0;
+			Flag_Shift = 0;
+			Timer0_Count = 0;
+			temp = 0x80;
+			Display_Word_Count = 0;
+			Shift_Count = 0;
+		}
 	}
 
 	count++;
-	if(count > 1000)
+	if(count > 500)
 	{
 		action = -1;
 		count = 0;
+		Clear_Display();
+		Display_Buffer[2];
+		Display_Swap_Buffer[Num_Word][32]={0};					//显示缓冲区
+		Shift_Bit = 0;
+		Flag_Shift = 0;
+		Timer0_Count = 0;
+		temp = 0x80;
+		Display_Word_Count = 0;
+		Shift_Count = 0;
 	}
-	//     
-	//*********************************************************   
-	/*	switch(action)
-		{
-		case 0:
-		for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word1[m][n];
-		}break;
-		case 1:for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word2[m][n];
-		}break;
-		case 2:for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word3[m][n];
-		}break;
-		case 3:
-		for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word4[m][n];
-		}break;
-		case 4:
-		for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word5[m][n];
-		}break;
-		case 5:
-		for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word6[m][n];
-		}break;
-		case 6:for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word7[m][n];
-		}break;
-		case 7:for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word8[m][n];
-		}break;
-		case 8:
-		for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word9[m][n];
-		}break;
-		default:
-		for(m=0;m<Num_Of_Word;m++)
-		{	for(n=0;n<32;n++)
-		Word[m][n]=Word10[m][n];
-		}break;
-		}
-		*/
+
 	switch(action)
 	{
 		case 0:
@@ -542,7 +521,7 @@ void loop()
 			   {	for(n=0;n<32;n++)
 				   Word[m][n]=Word9[m][n];
 			   }break;
-		case 9:
+		case 9://park is full
 			   for(m=0;m<Num_Of_Word;m++)
 			   {	for(n=0;n<32;n++)
 				   Word[m][n]=Word10[m][n];
@@ -557,7 +536,14 @@ void loop()
 			   {	for(n=0;n<32;n++)
 				   Word[m][n]=Word12[m][n];
 			   }break;
-		default:break;
+		default:
+			   {
+				   for(m=0;m<Num_Of_Word;m++)
+				   {	for(n=0;n<32;n++)
+					   Word[m][n]=Word13[m][n];
+				   }
+				   break;
+			   }
 	}
 
 
@@ -751,7 +737,7 @@ void Send( unsigned char dat)
 		}
 
 
-		digitalWrite(LEDARRAY_CLK, HIGH);	//上升沿发送数据
+		digitalWrite(LEDARRAY_CLK, HIGH);				//上升沿发送数据
 		//delayMicroseconds(1);;
 		digitalWrite(LEDARRAY_CLK, LOW);
 		//delayMicroseconds(1);;		

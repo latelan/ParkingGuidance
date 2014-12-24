@@ -178,6 +178,7 @@ int leave_handle(int exit_node,const char *id_card)
 	// 发布停车费用信息
 	send_msg(FEE,msgCard_recv.pos,0);
 
+	send_msg(BAR,msgCard_recv.pos,LIFT_BAR);
 	return 1;
 }
 
